@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     var imageNumber = 0
     var messageNum = 0
-    
+    let totalNumberOfImages = 9
     override func viewDidLoad() {
         super.viewDidLoad()
         messageLabel.text = ""
@@ -29,21 +29,24 @@ class ViewController: UIViewController {
                         "You Are Amazing!",
                         "You Are Supercalifragilisticexpialidocious!"]
         
+        messageLabel.text = messages[Int.random(in: 0...messages.count-1)]
         
-        messageLabel.text = messages[messageNum]
-        messageNum = messageNum + 1
         
-        if messageNum == messages.count {
-            messageNum = 0
-            
+        imageView.image = UIImage(named: "image\(Int.random(in: 0...totalNumberOfImages))")
+        //messageLabel.text = messages[messageNum]
+        //messageNum = messageNum + 1
+        
+        //if messageNum == messages.count {
+        // messageNum = 0
+        
         }
-            print(imageNumber)
-            let imageName = "image" + String(imageNumber)
+            //print(imageNumber)
+            //let imageName = "image" + String(imageNumber)
             //let imageName = "image\(imageNumber)"
-            imageView.image = UIImage(named: imageName)
-            imageNumber = imageNumber + 1
-            if imageNumber == 10{
-                imageNumber = 0
+            //imageView.image = UIImage(named: imageName)
+           // imageNumber = imageNumber + 1
+           // if imageNumber == 10{
+                //imageNumber = 0
                 
         }
         
@@ -79,7 +82,4 @@ class ViewController: UIViewController {
     //            messageLabel.text = awesomeMessage
     //            imageView.image = UIImage(named: "image0")
     
-}
 
-
-}
