@@ -58,13 +58,21 @@
 			children = (
 				31DA1B2D25C8702A0019A02B /* AppDelegate.swift */,
 				31DA1B2F25C8702A0019A02B /* SceneDelegate.swift */,
-				31DA1B3125C8702A0019A02B /* ViewController.swift */,
+				31DA1BA725D1BB000019A02B /* New Group */,
 				31DA1B3325C8702A0019A02B /* Main.storyboard */,
 				31DA1B3625C8702D0019A02B /* Assets.xcassets */,
 				31DA1B3825C8702D0019A02B /* LaunchScreen.storyboard */,
 				31DA1B3B25C8702D0019A02B /* Info.plist */,
 			);
 			path = "You Are Awesome!";
+			sourceTree = "<group>";
+		};
+		31DA1BA725D1BB000019A02B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				31DA1B3125C8702A0019A02B /* ViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
